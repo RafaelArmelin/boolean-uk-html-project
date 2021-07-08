@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: antiquewhite;
+  }
+
+h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: serif;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.1rem;
+    /* font-weight: bold; */
+    font-family: serif;
+    color: brown;
+    /* text-transform: uppercase; */
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+header{
+    background-color:brown;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    height: 150px;
+    color: white;
+    padding: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+.logo p{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.main-header{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.two-column-grid{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+}
+
+.three-column-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.basket-button{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3px rgb(80, 75, 75);
+}
+
+.basket-button a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.basket-button:active{
+    transform: translateY(4px);
+    box-shadow:none
+
+}
+button{
+    color: white;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 2px #666; 
+
+}
+
+button:hover{
+    background-color: crimson;
+    font-size: 1rem; 
+}
+
+button:active{
+    transform: translateY(4px);
+    box-shadow:none
+
+}
+
+.promotion{
+    height: 50px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: brown;
+    animation: changing-colours 2s infinite ease;
+}
+
+@keyframes changing-colours{
+    0% {
+        color: brown;
+        font-size: 1rem;
+    }
+    50%{
+        color: crimson;
+        font-size: 1.5rem;
+    }
+    100% {
+        color: brown;
+        font-size: 1rem;
+    }
+}
+
+.product-image {
+    width: 100%;
+
+    margin-bottom: 0.5rem;
+}
+
+.text-align__end{
+    text-align: end;
+}
+
+.text-align__center{
+    text-align: center;
+}
+
+.text-align__center h3,
+.text-align__center p{
+    color: brown;
+}
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 260px));
+    gap: 2.2rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.responsive-grid a{
+    text-decoration: none;
+}
+
+.responsive-grid .product-image:hover{
+    width: 265px;
+    height: 265px;
+}
+
+.responsive-grid__drinks-and-side-order {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    gap: 2.2rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.responsive-grid__drinks-and-side-order a{
+    text-decoration: none;
+}
+
+.responsive-grid__drinks-and-side-order .product-image:hover{
+    width: 205px;
+    height: 165px;
+}
+
+
+.grid-icons{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 40px));
+    gap: 1rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+
+}
+
+footer{
+    background-color:brown;
+    color: white;
+    padding: 20px;
+}
+
+.footer-text-align__center{
+    text-align: center;
+    font-size: 0.6rem;    
+}
+
+footer h2{
+    color: white;
+    text-decoration: none;
+}
+
+.center {
+    max-width: 120ch;
+  
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1rem;
+}
+
+.grid-icons a:hover{
+    height: 45px;
+    width: 45px;
+}
+
+.back-to-top-button{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.three-column-grid a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.three-column-grid a:hover{
+    text-decoration: underline;
+}
