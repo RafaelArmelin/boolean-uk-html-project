@@ -197,7 +197,7 @@ button:active{
     list-style: none;
     margin-bottom: 1.5rem;
     justify-content: center;
-
+    height: 40px;
 }
 
 footer{
@@ -232,13 +232,14 @@ footer h2{
 }
 
 .back-to-top-button{
-    border: 1px solid white;
+    border: 5px solid white;
     border-radius: 5px;
     background-color: white;
     text-decoration: none;
     color: brown;
     font-weight: bold;
     margin: 0 10px;
+    font-size: 0.8rem;
 }
 
 .three-column-grid a{
