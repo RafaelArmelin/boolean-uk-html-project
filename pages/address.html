@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="basket.css">
+    <link rel="stylesheet" href="address.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Due Frattelli</h1>
+            <p>Pizza Delivery</p>
+        </div>
+    </header>
+    <main>
+        <h2>Please, give us some info before your payment.</h2>
+        <div class="responsive-grid">
+            <form class="layout-form">
+                <div class="layout-form">
+                    <label class="label-style" for="username">Your Name</label>
+                    <input class="input-style" type="text" id="username" required placeholder="Enter your name">
+                </div>
+                <div class="layout-form">
+                    <label class="label-style" for="email">Email</label>
+                    <input class="input-style" type="email" id="email"  required placeholder="Enter your email adress">
+                </div>
+                <div class="layout-form">
+                    <label class="label-style" for="postcode">Post Code</label>
+                    <input class="input-style" type="text" id="postcode" maxlength="10" required placeholder="Enter your postcode">
+                </div>
+                <div class="layout-form">  
+                    <label class="label-style" for="address">Address</label>  
+                    <input class="input-style" type="text" id="address" required placeholder="Enter your address">
+                </div>
+                <div class="layout-form">  
+                    <label class="label-style" for="city">City</label>   
+                    <select class="input-style" name="city" id="city" required>
+                        <option value="">Choose your city</option>
+                        <option value="london">London</option>
+                        <option value="cambridge">Cambridge</option>
+                        <option value="oxford">Oxford</option>
+                    </select>
+                </div>
+                <div class="layout-form">      
+                    <label class="label-style" for="additional-info">Additional Information</label>
+                    <textarea class="input-style" name="additional-info" id="additional-info" placeholder="Please, add any extra information regarding your adress"></textarea>
+                </div>
+                <a href="/pages/checkout.html" target="_blank">
+                <div class="layout-form"> 
+                    <button class="button-style" type="submit">Submit and Proceed</button>
+                </div>
+                </a>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-text-align__center">
+            <p>© 2021 Due Frattelli (UK) Ltd. All rights reserved.</p>
+            <br>
+            <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. </p>
+        </div>
+    </footer>
+</body>
+</html>

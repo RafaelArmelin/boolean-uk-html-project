@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="basket.css">
+    <link rel="stylesheet" href="address.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Due Frattelli</h1>
+            <p>Pizza Delivery</p>
+        </div>
+    </header>
+    <main>
+        <h2>Please, give us your card details.</h2>
+        <div class="responsive-grid">
+            <form class="layout-form">
+                <div class="layout-form">
+                    <label class="label-style" for="card-number">Card Number</label>
+                    <input class="input-style" type="text" id="card-number" minlength="16" maxlength="16" required placeholder="Enter the card number">
+                </div>
+                <div class="layout-form">
+                    <label class="label-style" for="cards-holder">Card's Holder Name</label>
+                    <input class="input-style" type="text" id="cards-holder" required placeholder="Name on card">
+                </div>
+                <div class="layout-form">
+                    <label class="label-style" for="security-number">Security Number</label>
+                    <input class="input-style" type="text" id="security-number" minlength="3" maxlength="3" required placeholder="cvv">
+                </div>
+                <div class="layout-form">
+                    <label class="label-style" for="exp-date">Expiry date</label>
+                    <input class="input-style" type="text" id="exp-date" minlength="5" maxlength="5" required placeholder="mm/yy">
+                </div>
+
+                <a href="/pages/thankyou.html">
+                <div class="layout-form"> 
+                    <button class="button-style" type="submit">PAY</button>
+                </div>
+                </a>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-text-align__center">
+            <p>© 2021 Due Frattelli (UK) Ltd. All rights reserved.</p>
+            <br>
+            <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. </p>
+        </div>
+    </footer>
+</body>
+</html>
